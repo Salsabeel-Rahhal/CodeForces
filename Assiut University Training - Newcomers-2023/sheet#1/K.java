@@ -1,14 +1,16 @@
 import java.util.*;
 public class K{
-	//Multiples
+	//Max and Min
 	public static void main(String[] arges){
 		Scanner scan=new Scanner(System.in);
 		int A=scan.nextInt();
 		int B=scan.nextInt();
 		int C=scan.nextInt();
 		int max=0,min=0;
+
 		if(A>=B&&A>=C){
 			max=A;
+			if(B>=C)
 			System.out.println(B>=C?(min=C)+" "+(max):(min=B)+" "+(max));
 		}else if (B>=A&&B>=C){
 			max=B;
